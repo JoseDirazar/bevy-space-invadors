@@ -32,7 +32,7 @@ const SPACING: f32 = 24.;
 const SPEED: f32 = 100.0;
 const ALIEN_SIHFT_AMOUNT: f32 = 32.;
 
-pub fn setup_aliens(
+fn setup_aliens(
     mut commands: Commands,
     asset_server: Res<AssetServer>,
     resolution: Res<resolution::Resolution>,
@@ -71,7 +71,7 @@ pub fn setup_aliens(
     }
 }
 
-pub fn update_aliens(
+fn update_aliens(
     mut commands: Commands,
     mut alien_query: Query<(Entity, &Alien, &mut Transform, &mut Visibility), Without<Dead>>,
     mut alien_manager: ResMut<AlienManager>,

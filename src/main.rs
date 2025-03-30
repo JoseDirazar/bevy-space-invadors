@@ -2,6 +2,8 @@ use bevy::prelude::*;
 
 pub mod alien;
 pub mod game;
+pub mod player;
+pub mod projectile;
 pub mod resolution;
 
 fn main() {
